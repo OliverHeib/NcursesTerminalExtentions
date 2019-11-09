@@ -20,8 +20,8 @@
 
 namespace excolour{
 
-int defDefaultColours();
-//enum ColourPair { DefaultColour = 0; TitleColour = 1; buttonColour = 2, errorColour = 3 };
+    int defDefaultColours();
+    enum ColourPair { DefaultColour = 0, TitleColour = 1, buttonColour = 2, errorColour = 3 };
 
 }
 
