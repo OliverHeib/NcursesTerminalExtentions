@@ -2,6 +2,7 @@
 #include <locale.h>
 
 #include "ncurses_extentions.colours.h"
+#include "ncurses_extentions.guide.h"
 using namespace excolour;
 
 int screenSetUp();
@@ -14,6 +15,11 @@ int main()
     refresh();
 
     defDefaultColours();
+    //drawMenu();
+    Guide AGuide1; 
+    //Guide * AGuide = new Guide(); 
+    AGuide1.drawMenu();
+    //AGuide->drawMenu();
     
     char input;
     bool stay = true;
@@ -40,6 +46,7 @@ int main()
 int screenSetUp()
 {
     setlocale(LC_ALL, "en_GB.utf8");
+    //setlocale(LC_ALL, "");
     initscr();
     noecho();
     refresh();
