@@ -25,11 +25,11 @@ namespace excolour{
     {
         private:
             WINDOW * Win;
-            std::list <std::string> Memus2;
+            std::list <std::string> Menus;
             
         public:
             int drawMenu();
-            Guide();
+            Guide(std::list <std::string> menus );
 
     };
 

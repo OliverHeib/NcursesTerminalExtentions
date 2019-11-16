@@ -1,5 +1,7 @@
 #include <ncurses.h>
 #include <locale.h>
+#include <list>
+#include <string>
 
 #include "ncurses_extentions.colours.h"
 #include "ncurses_extentions.guide.h"
@@ -15,8 +17,12 @@ int main()
     refresh();
 
     defDefaultColours();
+
+
+    std::list<std::string> menus = {"Stats", "Inv", "Data", "Map", "Radio"};
+
     //drawMenu();
-    Guide AGuide1; 
+    Guide AGuide1(menus); 
     //Guide * AGuide = new Guide(); 
     AGuide1.drawMenu();
     //AGuide->drawMenu();
